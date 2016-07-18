@@ -1,0 +1,23 @@
+{
+  "name": "mongoose-fake",
+  "version": "1.0.0",
+  "description": "mongoose fake",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chkhikvadze/mongoose-fake.git"
+  },
+  "keywords": [
+    "mongoose",
+    "fake"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chkhikvadze/mongoose-fake/issues"
+  },
+  "homepage": "https://github.com/Chkhikvadze/mongoose-fake#readme"
+}
