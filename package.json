@@ -4,9 +4,8 @@
   "description": "mongoose fake",
   "main": "index.js",
   "scripts": {
-    "fix-lint": "eslint . --fix",
     "test": "mocha test/*.test.js test/**/*.test.js",
-    "posttest": "eslint . --quiet"
+    "lint": "eslint . --quiet"
   },
   "repository": {
     "type": "git",
