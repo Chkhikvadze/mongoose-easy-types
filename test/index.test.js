@@ -1,4 +1,4 @@
-var types = require('../src/index');
+var types = require('../src/index').Types;
 var expect = require('chai').expect;
 
 describe('tests for module types', function () {

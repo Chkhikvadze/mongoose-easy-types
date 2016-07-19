@@ -18,4 +18,4 @@ fs.readdirSync(typesDir)
 		}
 	});
 // export
-module.exports = types;
+module.exports.Types = types;
