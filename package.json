@@ -1,12 +1,12 @@
 {
   "name": "mongoose-fake",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "mongoose fake",
   "main": "index.js",
   "scripts": {
-		"fix-lint": "eslint . --fix",
+    "fix-lint": "eslint . --fix",
     "test": "mocha test/*.test.js test/**/*.test.js",
-		"posttest": "eslint . --quiet"
+    "posttest": "eslint . --quiet"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/Chkhikvadze/mongoose-fake#readme",
   "dependencies": {
+    "faker": "3.1.0",
+    "lodash": "4.13.1",
     "mongoose": "4.5.5"
   },
   "devDependencies": {
