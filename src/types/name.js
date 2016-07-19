@@ -7,5 +7,5 @@ var faker = require('faker');
  * @returns {Object} firstName type
  */
 module.exports.firstName = function (attr) {
-	return utils.generateType('string', faker.name.findName, null, attr);
+	return utils.generateType('string', faker.name.firstName, null, attr);
 };
