@@ -2,3 +2,158 @@
 advanced modeling with mongoose
 
 [![Build Status](https://travis-ci.org/Chkhikvadze/mongoose-fake.svg?branch=master)](https://github.com/Chkhikvadze/mongoose-fake)
+
+
+### API Methods
+
+* address
+  * zipCode    -   (String)
+  * city - String
+  * cityPrefix - String
+  * citySuffix - String
+  * streetName - String
+  * streetAddress - String
+  * streetSuffix
+  * streetPrefix
+  * secondaryAddress
+  * county
+  * country
+  * countryCode
+  * state
+  * stateAbbr
+  * latitude
+  * longitude
+* commerce
+  * color
+  * department
+  * productName
+  * price
+  * productAdjective
+  * productMaterial
+  * product
+* company
+  * suffixes
+  * companyName
+  * companySuffix
+  * catchPhrase
+  * bs
+  * catchPhraseAdjective
+  * catchPhraseDescriptor
+  * catchPhraseNoun
+  * bsAdjective
+  * bsBuzz
+  * bsNoun
+* date
+  * past
+  * future
+  * between
+  * recent
+  * month
+  * weekday
+* fake
+* finance
+  * account
+  * accountName
+  * mask
+  * amount
+  * transactionType
+  * currencyCode
+  * currencyName
+  * currencySymbol
+  * bitcoinAddress
+* hacker
+  * abbreviation
+  * adjective
+  * noun
+  * verb
+  * ingverb
+  * phrase
+* helpers
+  * randomize
+  * slugify
+  * replaceSymbolWithNumber
+  * replaceSymbols
+  * shuffle
+  * mustache
+  * createCard
+  * contextualCard
+  * userCard
+  * createTransaction
+* image
+  * image
+  * avatar
+  * imageUrl
+  * abstract
+  * animals
+  * business
+  * cats
+  * city
+  * food
+  * nightlife
+  * fashion
+  * people
+  * nature
+  * sports
+  * technics
+  * transport
+* internet
+  * avatar
+  * email
+  * exampleEmail
+  * userName
+  * protocol
+  * url
+  * domainName
+  * domainSuffix
+  * domainWord
+  * ip
+  * userAgent
+  * color
+  * mac
+  * password
+* lorem
+  * word
+  * words
+  * sentence
+  * sentences
+  * paragraph
+  * paragraphs
+  * text
+  * lines
+* name
+  * firstName
+  * lastName
+  * findName
+  * jobTitle
+  * prefix
+  * suffix
+  * title
+  * jobDescriptor
+  * jobArea
+  * jobType
+* phone
+  * phoneNumber
+  * phoneNumberFormat
+  * phoneFormats
+* random
+  * number
+  * arrayElement
+  * objectElement
+  * uuid
+  * boolean
+  * word
+  * words
+  * image
+  * locale
+  * alphaNumeric
+* system
+  * fileName
+  * commonFileName
+  * mimeType
+  * commonFileType
+  * commonFileExt
+  * fileType
+  * fileExt
+  * directoryPath
+  * filePath
+  * semver
