@@ -7,7 +7,7 @@ var faker = require('faker');
  * @returns {Object} past type
  */
 module.exports.past = function (attr) {
-	return utils.generateType('string', faker.date.past, null, attr);
+	return utils.generateType('date', faker.date.past, null, attr);
 };
 
 /**
@@ -16,7 +16,7 @@ module.exports.past = function (attr) {
  * @returns {Object} future type
  */
 module.exports.future = function (attr) {
-	return utils.generateType('string', faker.date.future, null, attr);
+	return utils.generateType('date', faker.date.future, null, attr);
 };
 
 /**
@@ -25,7 +25,7 @@ module.exports.future = function (attr) {
  * @returns {Object} between type
  */
 module.exports.between = function (attr) {
-	return utils.generateType('string', faker.date.between, null, attr);
+	return utils.generateType('date', faker.date.between, null, attr);
 };
 
 /**
@@ -34,7 +34,7 @@ module.exports.between = function (attr) {
  * @returns {Object} recent type
  */
 module.exports.recent = function (attr) {
-	return utils.generateType('string', faker.date.recent, null, attr);
+	return utils.generateType('date', faker.date.recent, null, attr);
 };
 
 /**

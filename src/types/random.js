@@ -7,7 +7,7 @@ var faker = require('faker');
  * @returns {Object} number type
  */
 module.exports.number = function (attr) {
-	return utils.generateType('string', faker.random.number, null, attr);
+	return utils.generateType('number', faker.random.number, null, attr);
 };
 
 /**
@@ -28,14 +28,14 @@ module.exports.objectElement = function (attr) {
 	return utils.generateType('string', faker.random.objectElement, null, attr);
 };
 
-/**
- * generates random.uuid type
- * @param {Object} attr custom props for mongoose
- * @returns {Object} uuid type
- */
-module.exports.uuid = function (attr) {
-	return utils.generateType('string', faker.random.uuid, null, attr);
-};
+// /**
+//  * generates random.uuid type
+//  * @param {Object} attr custom props for mongoose
+//  * @returns {Object} uuid type
+//  */
+// module.exports.uuid = function (attr) {
+// 	return utils.generateType('string', faker.random.uuid, null, attr);
+// };
 
 /**
  * generates random.boolean type
@@ -43,7 +43,7 @@ module.exports.uuid = function (attr) {
  * @returns {Object} boolean type
  */
 module.exports.boolean = function (attr) {
-	return utils.generateType('string', faker.random.boolean, null, attr);
+	return utils.generateType('boolean', faker.random.boolean, null, attr);
 };
 
 /**

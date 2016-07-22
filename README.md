@@ -4,15 +4,15 @@ advanced modeling with mongoose
 [![Build Status](https://travis-ci.org/Chkhikvadze/mongoose-fake.svg?branch=master)](https://github.com/Chkhikvadze/mongoose-fake)
 
 
-### API Methods
+### Types
 
-* address
-  * zipCode    -   (String)
-  * city - String
-  * cityPrefix - String
-  * citySuffix - String
-  * streetName - String
-  * streetAddress - String
+* address - String
+  * zipCode
+  * city
+  * cityPrefix
+  * citySuffix
+  * streetName
+  * streetAddress
   * streetSuffix
   * streetPrefix
   * secondaryAddress
@@ -44,10 +44,10 @@ advanced modeling with mongoose
   * bsBuzz
   * bsNoun
 * date
-  * past
-  * future
-  * between
-  * recent
+  * past - { type : date }
+  * future - { type : date }
+  * between - { type : date }
+  * recent - { type : date }
   * month
   * weekday
 * fake
@@ -136,11 +136,10 @@ advanced modeling with mongoose
   * phoneNumberFormat
   * phoneFormats
 * random
-  * number
+  * number - { type : number }
   * arrayElement
   * objectElement
-  * uuid
-  * boolean
+  * boolean - { type : boolean }
   * word
   * words
   * image
