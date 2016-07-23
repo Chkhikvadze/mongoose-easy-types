@@ -12,7 +12,7 @@ describe('tests for module types', function () {
 		expect(types.name).to.respondTo('firstName');
 	});
 
-	it('should Schema field exist', function () {
+	it('should Schema field exist', function (done) {
 
 		var schema = mongoose.Schema({
 			firstName : types.name.firstName({}),
@@ -83,10 +83,31 @@ describe('tests for module types', function () {
 		item.imageUrl = types.image.imageUrl().fake();
 		item.animals = types.image.animals().fake();
 
-		item.save(function (err, item) {
-			assert.isNull(err, 'there was no error');
-		});
+		return new Promise(function (resolve, reject) {
 
+		item.save()
+			.then(function (item) {
+				assert.isNotNull(item, "error when update trial");
+				assert.property(item, 'firstName');
+				assert.property(item, 'lastName');
+				assert.property(item, 'amount');
+				assert.property(item, 'between');
+				assert.property(item, 'suffixes');
+				assert.property(item, 'price');
+				assert.property(item, 'createCard');
+				assert.property(item, 'contextualCard');
+				assert.property(item, 'replaceSymbolWithNumber');
+				assert.property(item, 'number');
+				assert.property(item, 'boolean');
+				assert.property(item, 'shuffle');
+				assert.property(item, 'image');
+				assert.property(item, 'avatar');
+				assert.property(item, 'imageUrl');
+				assert.property(item, 'animals');
+
+				resolve(item);
+			}).catch(reject);
+		}).then(function () { done(); }).catch(done);
 	});
 
 });
