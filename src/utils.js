@@ -15,3 +15,21 @@ module.exports.generateType = function (type, fake, validation, attr) {
 		validation: validation
 	}, attr);
 };
+
+/**
+ * changes types with compatability to mongoose
+ * @param func
+ * @param {string} type mongoose type names only
+ * @returns {Function} converter function
+ */
+module.exports.changeType = function (func, type) {
+	return function() {
+		type = type.toLowerCase();
+
+		if (type === 'number') {
+			return Number(func());
+		} else {
+			return new Error('not a valid mongoose type');
+		}
+	}
+};

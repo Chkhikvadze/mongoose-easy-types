@@ -7,7 +7,7 @@ var faker = require('faker');
  * @returns {Object} suffixes type
  */
 module.exports.suffixes = function (attr) {
-	return utils.generateType('string', faker.company.suffixes, null, attr);
+	return utils.generateType([], faker.company.suffixes, null, attr);
 };
 
 /**

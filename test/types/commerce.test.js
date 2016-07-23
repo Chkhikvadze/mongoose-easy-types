@@ -51,11 +51,11 @@ describe('tests for commerce types', function () {
 		var price = types.price({required: true});
 
 		expect(price.type).to.exist;
-		expect(price.type).to.equal('string');
+		expect(price.type).to.equal('number');
 
 		expect(price.fake).to.exist;
 		expect(price).to.respondTo('fake');
-		expect(price.fake()).to.be.a('string');
+		expect(price.fake()).to.be.a('number');
 
 		expect(price.required).to.exist;
 		expect(price.required).to.be.true;

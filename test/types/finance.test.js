@@ -51,18 +51,14 @@ describe('tests for finance types', function () {
 		var amount = types.amount({required: true});
 
 		expect(amount.type).to.exist;
-		expect(amount.type).to.equal('string');
+		expect(amount.type).to.equal('number');
 
 		expect(amount.fake).to.exist;
 		expect(amount).to.respondTo('fake');
-		expect(amount.fake()).to.be.a('string');
+		expect(amount.fake()).to.be.a('number');
 
 		expect(amount.required).to.exist;
 		expect(amount.required).to.be.true;
-
-		console.log("ddd");
-		console.log(amount.fake());
-		console.log(typeof amount.fake());
 	});
 
 	it('should generate transactionType type', function () {

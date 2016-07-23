@@ -29,6 +29,15 @@ module.exports.sentence = function (attr) {
 };
 
 /**
+ * generates lorem.sentences type
+ * @param {Object} attr custom props for mongoose
+ * @returns {Object} sentences type
+ */
+module.exports.sentences = function (attr) {
+	return utils.generateType('string', faker.lorem.sentences, null, attr);
+};
+
+/**
  * generates lorem.paragraph type
  * @param {Object} attr custom props for mongoose
  * @returns {Object} paragraph type

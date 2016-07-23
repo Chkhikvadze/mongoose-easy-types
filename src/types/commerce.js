@@ -34,7 +34,7 @@ module.exports.productName = function (attr) {
  * @returns {Object} price type
  */
 module.exports.price = function (attr) {
-	return utils.generateType('string', faker.commerce.price, null, attr);
+	return utils.generateType('number', utils.changeType(faker.commerce.price, 'number'), null, attr);
 };
 
 /**

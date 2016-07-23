@@ -6,7 +6,7 @@ advanced modeling with mongoose
 
 ### Types
 
-* address - String
+* address - { type : String }
   * zipCode
   * city
   * cityPrefix
@@ -27,12 +27,12 @@ advanced modeling with mongoose
   * color
   * department
   * productName
-  * price
+  * price - { type : Number }
   * productAdjective
   * productMaterial
   * product
 * company
-  * suffixes
+  * suffixes - { type : [] }
   * companyName
   * companySuffix
   * catchPhrase
@@ -55,13 +55,13 @@ advanced modeling with mongoose
   * account
   * accountName
   * mask
-  * amount
+  * amount - { type : Number }
   * transactionType
   * currencyCode
   * currencyName
   * currencySymbol
   * bitcoinAddress
-* hacker
+* hacker - { type : String }
   * abbreviation
   * adjective
   * noun
@@ -73,13 +73,13 @@ advanced modeling with mongoose
   * slugify
   * replaceSymbolWithNumber
   * replaceSymbols
-  * shuffle
+  * shuffle - { type : [] }
   * mustache
-  * createCard
-  * contextualCard
-  * userCard
-  * createTransaction
-* image
+  * createCard - { type : {} }
+  * contextualCard - { type : {} }
+  * userCard - { type : {} }
+  * createTransaction - { type : {} }
+* image - { type : String }
   * image
   * avatar
   * imageUrl
@@ -96,7 +96,7 @@ advanced modeling with mongoose
   * sports
   * technics
   * transport
-* internet
+* internet - { type : String }
   * avatar
   * email
   * exampleEmail
@@ -111,7 +111,7 @@ advanced modeling with mongoose
   * color
   * mac
   * password
-* lorem
+* lorem - { type : String }
   * word
   * words
   * sentence
@@ -120,7 +120,7 @@ advanced modeling with mongoose
   * paragraphs
   * text
   * lines
-* name
+* name - { type : String }
   * firstName
   * lastName
   * findName
@@ -131,7 +131,7 @@ advanced modeling with mongoose
   * jobDescriptor
   * jobArea
   * jobType
-* phone
+* phone - { type : String }
   * phoneNumber
   * phoneNumberFormat
   * phoneFormats
@@ -145,7 +145,7 @@ advanced modeling with mongoose
   * image
   * locale
   * alphaNumeric
-* system
+* system - { type : String }
   * fileName
   * commonFileName
   * mimeType
@@ -153,6 +153,6 @@ advanced modeling with mongoose
   * commonFileExt
   * fileType
   * fileExt
-  * directoryPath
-  * filePath
+  * directoryPath - //TODO
+  * filePath - //TODO
   * semver

@@ -43,7 +43,7 @@ module.exports.replaceSymbols = function (attr) {
  * @returns {Object} shuffle type
  */
 module.exports.shuffle = function (attr) {
-	return utils.generateType('string', faker.helpers.shuffle, null, attr);
+	return utils.generateType([], faker.helpers.shuffle, null, attr);
 };
 
 /**
@@ -62,7 +62,7 @@ module.exports.mustache = function (attr) {
  */
 
 module.exports.createCard = function (attr) {
-	return utils.generateType('string', faker.helpers.createCard, null, attr);
+	return utils.generateType({}, faker.helpers.createCard, null, attr);
 };
 
 /**
@@ -71,7 +71,7 @@ module.exports.createCard = function (attr) {
  * @returns {Object} contextualCard type
  */
 module.exports.contextualCard = function (attr) {
-	return utils.generateType('string', faker.helpers.contextualCard, null, attr);
+	return utils.generateType({}, faker.helpers.contextualCard, null, attr);
 };
 
 /**
@@ -80,7 +80,7 @@ module.exports.contextualCard = function (attr) {
  * @returns {Object} userCard type
  */
 module.exports.userCard = function (attr) {
-	return utils.generateType('string', faker.helpers.userCard, null, attr);
+	return utils.generateType({}, faker.helpers.userCard, null, attr);
 };
 
 /**
@@ -89,5 +89,5 @@ module.exports.userCard = function (attr) {
  * @returns {Object} createTransaction type
  */
 module.exports.createTransaction = function (attr) {
-	return utils.generateType('string', faker.helpers.createTransaction, null, attr);
+	return utils.generateType({}, faker.helpers.createTransaction, null, attr);
 };

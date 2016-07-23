@@ -34,7 +34,7 @@ module.exports.mask = function (attr) {
  * @returns {Object} amount type
  */
 module.exports.amount = function (attr) {
-	return utils.generateType('string', faker.finance.amount, null, attr);
+	return utils.generateType('number', utils.changeType(faker.finance.amount, 'number'), null, attr);
 };
 
 /**

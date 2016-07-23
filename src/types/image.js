@@ -38,6 +38,15 @@ module.exports.abstract = function (attr) {
 };
 
 /**
+ * generates image.abstract type
+ * @param {Object} attr custom props for mongoose
+ * @returns {Object} abstract type
+ */
+module.exports.animals = function (attr) {
+	return utils.generateType('string', faker.image.animals, null, attr);
+};
+
+/**
  * generates image.business type
  * @param {Object} attr custom props for mongoose
  * @returns {Object} business type
