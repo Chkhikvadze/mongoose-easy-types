@@ -11,9 +11,9 @@ describe('tests for company types', function () {
 		expect(suffixes.type).to.exist;
 		expect(suffixes.type).to.be.instanceof(Array);
 
-		expect(suffixes.fake).to.exist;
-		expect(suffixes).to.respondTo('fake');
-		expect(suffixes.fake()).to.be.instanceof(Array);
+		expect(suffixes.fakePath).to.exist;
+		expect(suffixes).to.respondTo('fakePath');
+		expect(suffixes.fakePath()).to.be.instanceof(Array);
 
 
 		expect(suffixes.required).to.exist;
@@ -26,9 +26,9 @@ describe('tests for company types', function () {
 		expect(companyName.type).to.exist;
 		expect(companyName.type).to.equal('string');
 
-		expect(companyName.fake).to.exist;
-		expect(companyName).to.respondTo('fake');
-		expect(companyName.fake()).to.be.a('string');
+		expect(companyName.fakePath).to.exist;
+		expect(companyName).to.respondTo('fakePath');
+		expect(companyName.fakePath()).to.be.a('string');
 
 		expect(companyName.required).to.exist;
 		expect(companyName.required).to.be.true;
@@ -40,9 +40,9 @@ describe('tests for company types', function () {
 		expect(companySuffix.type).to.exist;
 		expect(companySuffix.type).to.equal('string');
 
-		expect(companySuffix.fake).to.exist;
-		expect(companySuffix).to.respondTo('fake');
-		expect(companySuffix.fake()).to.be.a('string');
+		expect(companySuffix.fakePath).to.exist;
+		expect(companySuffix).to.respondTo('fakePath');
+		expect(companySuffix.fakePath()).to.be.a('string');
 
 		expect(companySuffix.required).to.exist;
 		expect(companySuffix.required).to.be.true;
@@ -54,9 +54,9 @@ describe('tests for company types', function () {
 		expect(catchPhrase.type).to.exist;
 		expect(catchPhrase.type).to.equal('string');
 
-		expect(catchPhrase.fake).to.exist;
-		expect(catchPhrase).to.respondTo('fake');
-		expect(catchPhrase.fake()).to.be.a('string');
+		expect(catchPhrase.fakePath).to.exist;
+		expect(catchPhrase).to.respondTo('fakePath');
+		expect(catchPhrase.fakePath()).to.be.a('string');
 
 		expect(catchPhrase.required).to.exist;
 		expect(catchPhrase.required).to.be.true;
@@ -68,9 +68,9 @@ describe('tests for company types', function () {
 		expect(bs.type).to.exist;
 		expect(bs.type).to.equal('string');
 
-		expect(bs.fake).to.exist;
-		expect(bs).to.respondTo('fake');
-		expect(bs.fake()).to.be.a('string');
+		expect(bs.fakePath).to.exist;
+		expect(bs).to.respondTo('fakePath');
+		expect(bs.fakePath()).to.be.a('string');
 
 		expect(bs.required).to.exist;
 		expect(bs.required).to.be.true;
@@ -82,9 +82,9 @@ describe('tests for company types', function () {
 		expect(catchPhraseAdjective.type).to.exist;
 		expect(catchPhraseAdjective.type).to.equal('string');
 
-		expect(catchPhraseAdjective.fake).to.exist;
-		expect(catchPhraseAdjective).to.respondTo('fake');
-		expect(catchPhraseAdjective.fake()).to.be.a('string');
+		expect(catchPhraseAdjective.fakePath).to.exist;
+		expect(catchPhraseAdjective).to.respondTo('fakePath');
+		expect(catchPhraseAdjective.fakePath()).to.be.a('string');
 
 		expect(catchPhraseAdjective.required).to.exist;
 		expect(catchPhraseAdjective.required).to.be.true;
@@ -96,9 +96,9 @@ describe('tests for company types', function () {
 		expect(catchPhraseDescriptor.type).to.exist;
 		expect(catchPhraseDescriptor.type).to.equal('string');
 
-		expect(catchPhraseDescriptor.fake).to.exist;
-		expect(catchPhraseDescriptor).to.respondTo('fake');
-		expect(catchPhraseDescriptor.fake()).to.be.a('string');
+		expect(catchPhraseDescriptor.fakePath).to.exist;
+		expect(catchPhraseDescriptor).to.respondTo('fakePath');
+		expect(catchPhraseDescriptor.fakePath()).to.be.a('string');
 
 		expect(catchPhraseDescriptor.required).to.exist;
 		expect(catchPhraseDescriptor.required).to.be.true;
@@ -110,9 +110,9 @@ describe('tests for company types', function () {
 		expect(catchPhraseNoun.type).to.exist;
 		expect(catchPhraseNoun.type).to.equal('string');
 
-		expect(catchPhraseNoun.fake).to.exist;
-		expect(catchPhraseNoun).to.respondTo('fake');
-		expect(catchPhraseNoun.fake()).to.be.a('string');
+		expect(catchPhraseNoun.fakePath).to.exist;
+		expect(catchPhraseNoun).to.respondTo('fakePath');
+		expect(catchPhraseNoun.fakePath()).to.be.a('string');
 
 		expect(catchPhraseNoun.required).to.exist;
 		expect(catchPhraseNoun.required).to.be.true;
@@ -124,9 +124,9 @@ describe('tests for company types', function () {
 		expect(bsAdjective.type).to.exist;
 		expect(bsAdjective.type).to.equal('string');
 
-		expect(bsAdjective.fake).to.exist;
-		expect(bsAdjective).to.respondTo('fake');
-		expect(bsAdjective.fake()).to.be.a('string');
+		expect(bsAdjective.fakePath).to.exist;
+		expect(bsAdjective).to.respondTo('fakePath');
+		expect(bsAdjective.fakePath()).to.be.a('string');
 
 		expect(bsAdjective.required).to.exist;
 		expect(bsAdjective.required).to.be.true;
@@ -138,9 +138,9 @@ describe('tests for company types', function () {
 		expect(bsBuzz.type).to.exist;
 		expect(bsBuzz.type).to.equal('string');
 
-		expect(bsBuzz.fake).to.exist;
-		expect(bsBuzz).to.respondTo('fake');
-		expect(bsBuzz.fake()).to.be.a('string');
+		expect(bsBuzz.fakePath).to.exist;
+		expect(bsBuzz).to.respondTo('fakePath');
+		expect(bsBuzz.fakePath()).to.be.a('string');
 
 		expect(bsBuzz.required).to.exist;
 		expect(bsBuzz.required).to.be.true;
@@ -152,9 +152,9 @@ describe('tests for company types', function () {
 		expect(bsNoun.type).to.exist;
 		expect(bsNoun.type).to.equal('string');
 
-		expect(bsNoun.fake).to.exist;
-		expect(bsNoun).to.respondTo('fake');
-		expect(bsNoun.fake()).to.be.a('string');
+		expect(bsNoun.fakePath).to.exist;
+		expect(bsNoun).to.respondTo('fakePath');
+		expect(bsNoun.fakePath()).to.be.a('string');
 
 		expect(bsNoun.required).to.exist;
 		expect(bsNoun.required).to.be.true;

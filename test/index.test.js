@@ -19,7 +19,7 @@ describe('tests for module types', function () {
 			lastName : types.name.firstName({require : true}),
 			surName : {
 				type : types.name.firstName().type,
-				fake : types.name.firstName().fake
+				fakePath : types.name.firstName().fakePath
 			},
 			amount : types.finance.amount(),
 			between : types.date.between(),
@@ -41,15 +41,15 @@ describe('tests for module types', function () {
 		expect(schema.paths.firstName.options.type).to.exist;
 		expect(schema.paths.firstName.options.type).to.equal('string');
 
-		expect(schema.paths.firstName.options.fake).to.exist;
-		expect(schema.paths.firstName.options.fake()).to.be.a('string');
+		expect(schema.paths.firstName.options.fakePath).to.exist;
+		expect(schema.paths.firstName.options.fakePath()).to.be.a('string');
 
 
 		expect(schema.paths.lastName.options.type).to.exist;
 		expect(schema.paths.lastName.options.type).to.equal('string');
 
-		expect(schema.paths.lastName.options.fake).to.exist;
-		expect(schema.paths.lastName.options.fake()).to.be.a('string');
+		expect(schema.paths.lastName.options.fakePath).to.exist;
+		expect(schema.paths.lastName.options.fakePath()).to.be.a('string');
 
 		expect(schema.paths.lastName.options.require).to.exist;
 		expect(schema.paths.lastName.options.require).to.equal(true);
@@ -58,30 +58,30 @@ describe('tests for module types', function () {
 		expect(schema.paths.surName.options.type).to.exist;
 		expect(schema.paths.surName.options.type).to.equal('string');
 
-		expect(schema.paths.surName.options.fake).to.exist;
-		expect(schema.paths.surName.options.fake()).to.be.a('string');
+		expect(schema.paths.surName.options.fakePath).to.exist;
+		expect(schema.paths.surName.options.fakePath()).to.be.a('string');
 
-		expect(schema.paths.surName.options.fake).to.exist;
-		expect(schema.paths.surName.options.fake()).to.be.a('string');
+		expect(schema.paths.surName.options.fakePath).to.exist;
+		expect(schema.paths.surName.options.fakePath()).to.be.a('string');
 
 
 		var item = model();
-		item.firstName = types.name.firstName().fake();
-		item.lastName = types.name.lastName().fake();
-		item.amount = types.finance.amount().fake();
-		item.between = types.date.between().fake();
-		item.suffixes = types.company.suffixes().fake();
-		item.price = types.commerce.price().fake();
-		item.shuffle = types.helpers.shuffle().fake();
-		item.createCard = types.helpers.createCard().fake();
-		item.contextualCard = types.helpers.contextualCard().fake();
-		item.replaceSymbolWithNumber = types.helpers.replaceSymbolWithNumber().fake();
-		item.number = types.random.number().fake();
-		item.boolean = types.random.boolean().fake();
-		item.image = types.image.image().fake();
-		item.avatar = types.image.avatar().fake();
-		item.imageUrl = types.image.imageUrl().fake();
-		item.animals = types.image.animals().fake();
+		item.firstName = types.name.firstName().fakePath();
+		item.lastName = types.name.lastName().fakePath();
+		item.amount = types.finance.amount().fakePath();
+		item.between = types.date.between().fakePath();
+		item.suffixes = types.company.suffixes().fakePath();
+		item.price = types.commerce.price().fakePath();
+		item.shuffle = types.helpers.shuffle().fakePath();
+		item.createCard = types.helpers.createCard().fakePath();
+		item.contextualCard = types.helpers.contextualCard().fakePath();
+		item.replaceSymbolWithNumber = types.helpers.replaceSymbolWithNumber().fakePath();
+		item.number = types.random.number().fakePath();
+		item.boolean = types.random.boolean().fakePath();
+		item.image = types.image.image().fakePath();
+		item.avatar = types.image.avatar().fakePath();
+		item.imageUrl = types.image.imageUrl().fakePath();
+		item.animals = types.image.animals().fakePath();
 
 		return new Promise(function (resolve, reject) {
 

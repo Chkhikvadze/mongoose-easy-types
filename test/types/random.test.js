@@ -11,9 +11,9 @@ describe('tests for random types', function () {
 		expect(number.type).to.exist;
 		expect(number.type).to.equal('number');
 
-		expect(number.fake).to.exist;
-		expect(number).to.respondTo('fake');
-		expect(number.fake()).to.be.a('number');
+		expect(number.fakePath).to.exist;
+		expect(number).to.respondTo('fakePath');
+		expect(number.fakePath()).to.be.a('number');
 
 		expect(number.required).to.exist;
 		expect(number.required).to.be.true;
@@ -26,9 +26,9 @@ describe('tests for random types', function () {
 		expect(arrayElement.type).to.exist;
 		expect(arrayElement.type).to.equal('string');
 
-		expect(arrayElement.fake).to.exist;
-		expect(arrayElement).to.respondTo('fake');
-		expect(arrayElement.fake()).to.be.a('string');
+		expect(arrayElement.fakePath).to.exist;
+		expect(arrayElement).to.respondTo('fakePath');
+		expect(arrayElement.fakePath()).to.be.a('string');
 
 		expect(arrayElement.required).to.exist;
 		expect(arrayElement.required).to.be.true;
@@ -40,9 +40,9 @@ describe('tests for random types', function () {
 		expect(objectElement.type).to.exist;
 		expect(objectElement.type).to.equal('string');
 
-		expect(objectElement.fake).to.exist;
-		expect(objectElement).to.respondTo('fake');
-		expect(objectElement.fake()).to.be.a('string');
+		expect(objectElement.fakePath).to.exist;
+		expect(objectElement).to.respondTo('fakePath');
+		expect(objectElement.fakePath()).to.be.a('string');
 
 		expect(objectElement.required).to.exist;
 		expect(objectElement.required).to.be.true;
@@ -54,9 +54,9 @@ describe('tests for random types', function () {
 	// 	expect(uuid.type).to.exist;
 	// 	expect(uuid.type).to.equal('string');
     //
-	// 	expect(uuid.fake).to.exist;
-	// 	expect(uuid).to.respondTo('fake');
-	// 	expect(uuid.fake()).to.be.a('number');
+	// 	expect(uuid.fakePath).to.exist;
+	// 	expect(uuid).to.respondTo('fakePath');
+	// 	expect(uuid.fakePath()).to.be.a('number');
     //
 	// 	expect(uuid.required).to.exist;
 	// 	expect(uuid.required).to.be.true;
@@ -68,9 +68,9 @@ describe('tests for random types', function () {
 		expect(boolean.type).to.exist;
 		expect(boolean.type).to.equal('boolean');
 
-		expect(boolean.fake).to.exist;
-		expect(boolean).to.respondTo('fake');
-		expect(boolean.fake()).to.be.a('boolean');
+		expect(boolean.fakePath).to.exist;
+		expect(boolean).to.respondTo('fakePath');
+		expect(boolean.fakePath()).to.be.a('boolean');
 
 		expect(boolean.required).to.exist;
 		expect(boolean.required).to.be.true;
@@ -82,9 +82,9 @@ describe('tests for random types', function () {
 		expect(word.type).to.exist;
 		expect(word.type).to.equal('string');
 
-		expect(word.fake).to.exist;
-		expect(word).to.respondTo('fake');
-		expect(word.fake()).to.be.a('string');
+		expect(word.fakePath).to.exist;
+		expect(word).to.respondTo('fakePath');
+		expect(word.fakePath()).to.be.a('string');
 
 		expect(word.required).to.exist;
 		expect(word.required).to.be.true;
@@ -96,9 +96,9 @@ describe('tests for random types', function () {
 		expect(words.type).to.exist;
 		expect(words.type).to.equal('string');
 
-		expect(words.fake).to.exist;
-		expect(words).to.respondTo('fake');
-		expect(words.fake()).to.be.a('string');
+		expect(words.fakePath).to.exist;
+		expect(words).to.respondTo('fakePath');
+		expect(words.fakePath()).to.be.a('string');
 
 		expect(words.required).to.exist;
 		expect(words.required).to.be.true;
@@ -110,9 +110,9 @@ describe('tests for random types', function () {
 		expect(locale.type).to.exist;
 		expect(locale.type).to.equal('string');
 
-		expect(locale.fake).to.exist;
-		expect(locale).to.respondTo('fake');
-		expect(locale.fake()).to.be.a('string');
+		expect(locale.fakePath).to.exist;
+		expect(locale).to.respondTo('fakePath');
+		expect(locale.fakePath()).to.be.a('string');
 
 		expect(locale.required).to.exist;
 		expect(locale.required).to.be.true;
@@ -124,9 +124,9 @@ describe('tests for random types', function () {
 		expect(alphaNumeric.type).to.exist;
 		expect(alphaNumeric.type).to.equal('string');
 
-		expect(alphaNumeric.fake).to.exist;
-		expect(alphaNumeric).to.respondTo('fake');
-		expect(alphaNumeric.fake()).to.be.a('string');
+		expect(alphaNumeric.fakePath).to.exist;
+		expect(alphaNumeric).to.respondTo('fakePath');
+		expect(alphaNumeric.fakePath()).to.be.a('string');
 
 		expect(alphaNumeric.required).to.exist;
 		expect(alphaNumeric.required).to.be.true;

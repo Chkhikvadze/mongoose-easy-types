@@ -11,9 +11,9 @@ describe('tests for name types', function () {
 		expect(firstName.type).to.exist;
 		expect(firstName.type).to.equal('string');
 
-		expect(firstName.fake).to.exist;
-		expect(firstName).to.respondTo('fake');
-		expect(firstName.fake()).to.be.a('string');
+		expect(firstName.fakePath).to.exist;
+		expect(firstName).to.respondTo('fakePath');
+		expect(firstName.fakePath()).to.be.a('string');
 
 		expect(firstName.required).to.exist;
 		expect(firstName.required).to.be.true;
@@ -25,9 +25,9 @@ describe('tests for name types', function () {
 		expect(lastName.type).to.exist;
 		expect(lastName.type).to.equal('string');
 
-		expect(lastName.fake).to.exist;
-		expect(lastName).to.respondTo('fake');
-		expect(lastName.fake()).to.be.a('string');
+		expect(lastName.fakePath).to.exist;
+		expect(lastName).to.respondTo('fakePath');
+		expect(lastName.fakePath()).to.be.a('string');
 
 		expect(lastName.required).to.exist;
 		expect(lastName.required).to.be.true;
@@ -39,9 +39,9 @@ describe('tests for name types', function () {
 		expect(findName.type).to.exist;
 		expect(findName.type).to.equal('string');
 
-		expect(findName.fake).to.exist;
-		expect(findName).to.respondTo('fake');
-		expect(findName.fake()).to.be.a('string');
+		expect(findName.fakePath).to.exist;
+		expect(findName).to.respondTo('fakePath');
+		expect(findName.fakePath()).to.be.a('string');
 
 		expect(findName.required).to.exist;
 		expect(findName.required).to.be.true;
@@ -53,9 +53,9 @@ describe('tests for name types', function () {
 		expect(jobTitle.type).to.exist;
 		expect(jobTitle.type).to.equal('string');
 
-		expect(jobTitle.fake).to.exist;
-		expect(jobTitle).to.respondTo('fake');
-		expect(jobTitle.fake()).to.be.a('string');
+		expect(jobTitle.fakePath).to.exist;
+		expect(jobTitle).to.respondTo('fakePath');
+		expect(jobTitle.fakePath()).to.be.a('string');
 
 		expect(jobTitle.required).to.exist;
 		expect(jobTitle.required).to.be.true;
@@ -67,9 +67,9 @@ describe('tests for name types', function () {
 		expect(prefix.type).to.exist;
 		expect(prefix.type).to.equal('string');
 
-		expect(prefix.fake).to.exist;
-		expect(prefix).to.respondTo('fake');
-		expect(prefix.fake()).to.be.a('string');
+		expect(prefix.fakePath).to.exist;
+		expect(prefix).to.respondTo('fakePath');
+		expect(prefix.fakePath()).to.be.a('string');
 
 		expect(prefix.required).to.exist;
 		expect(prefix.required).to.be.true;
@@ -81,9 +81,9 @@ describe('tests for name types', function () {
 		expect(title.type).to.exist;
 		expect(title.type).to.equal('string');
 
-		expect(title.fake).to.exist;
-		expect(title).to.respondTo('fake');
-		expect(title.fake()).to.be.a('string');
+		expect(title.fakePath).to.exist;
+		expect(title).to.respondTo('fakePath');
+		expect(title.fakePath()).to.be.a('string');
 
 		expect(title.required).to.exist;
 		expect(title.required).to.be.true;
@@ -95,9 +95,9 @@ describe('tests for name types', function () {
 		expect(jobDescriptor.type).to.exist;
 		expect(jobDescriptor.type).to.equal('string');
 
-		expect(jobDescriptor.fake).to.exist;
-		expect(jobDescriptor).to.respondTo('fake');
-		expect(jobDescriptor.fake()).to.be.a('string');
+		expect(jobDescriptor.fakePath).to.exist;
+		expect(jobDescriptor).to.respondTo('fakePath');
+		expect(jobDescriptor.fakePath()).to.be.a('string');
 
 		expect(jobDescriptor.required).to.exist;
 		expect(jobDescriptor.required).to.be.true;
@@ -109,9 +109,9 @@ describe('tests for name types', function () {
 		expect(jobDescriptor.type).to.exist;
 		expect(jobDescriptor.type).to.equal('string');
 
-		expect(jobDescriptor.fake).to.exist;
-		expect(jobDescriptor).to.respondTo('fake');
-		expect(jobDescriptor.fake()).to.be.a('string');
+		expect(jobDescriptor.fakePath).to.exist;
+		expect(jobDescriptor).to.respondTo('fakePath');
+		expect(jobDescriptor.fakePath()).to.be.a('string');
 
 		expect(jobDescriptor.required).to.exist;
 		expect(jobDescriptor.required).to.be.true;
@@ -123,9 +123,9 @@ describe('tests for name types', function () {
 		expect(jobArea.type).to.exist;
 		expect(jobArea.type).to.equal('string');
 
-		expect(jobArea.fake).to.exist;
-		expect(jobArea).to.respondTo('fake');
-		expect(jobArea.fake()).to.be.a('string');
+		expect(jobArea.fakePath).to.exist;
+		expect(jobArea).to.respondTo('fakePath');
+		expect(jobArea.fakePath()).to.be.a('string');
 
 		expect(jobArea.required).to.exist;
 		expect(jobArea.required).to.be.true;
@@ -137,9 +137,9 @@ describe('tests for name types', function () {
 		expect(jobType.type).to.exist;
 		expect(jobType.type).to.equal('string');
 
-		expect(jobType.fake).to.exist;
-		expect(jobType).to.respondTo('fake');
-		expect(jobType.fake()).to.be.a('string');
+		expect(jobType.fakePath).to.exist;
+		expect(jobType).to.respondTo('fakePath');
+		expect(jobType.fakePath()).to.be.a('string');
 
 		expect(jobType.required).to.exist;
 		expect(jobType.required).to.be.true;

@@ -11,9 +11,9 @@ describe('tests for address types', function () {
 		expect(zipCode.type).to.exist;
 		expect(zipCode.type).to.equal('string');
 
-		expect(zipCode.fake).to.exist;
-		expect(zipCode).to.respondTo('fake');
-		expect(zipCode.fake()).to.be.a('string');
+		expect(zipCode.fakePath).to.exist;
+		expect(zipCode).to.respondTo('fakePath');
+		expect(zipCode.fakePath()).to.be.a('string');
 
 		expect(zipCode.required).to.exist;
 		expect(zipCode.required).to.be.true;
@@ -25,9 +25,9 @@ describe('tests for address types', function () {
 		expect(city.type).to.exist;
 		expect(city.type).to.equal('string');
 
-		expect(city.fake).to.exist;
-		expect(city).to.respondTo('fake');
-		expect(city.fake()).to.be.a('string');
+		expect(city.fakePath).to.exist;
+		expect(city).to.respondTo('fakePath');
+		expect(city.fakePath()).to.be.a('string');
 
 		expect(city.required).to.exist;
 		expect(city.required).to.be.true;
@@ -39,9 +39,9 @@ describe('tests for address types', function () {
 		expect(cityPrefix.type).to.exist;
 		expect(cityPrefix.type).to.equal('string');
 
-		expect(cityPrefix.fake).to.exist;
-		expect(cityPrefix).to.respondTo('fake');
-		expect(cityPrefix.fake()).to.be.a('string');
+		expect(cityPrefix.fakePath).to.exist;
+		expect(cityPrefix).to.respondTo('fakePath');
+		expect(cityPrefix.fakePath()).to.be.a('string');
 
 		expect(cityPrefix.required).to.exist;
 		expect(cityPrefix.required).to.be.true;
@@ -53,9 +53,9 @@ describe('tests for address types', function () {
 		expect(citySuffix.type).to.exist;
 		expect(citySuffix.type).to.equal('string');
 
-		expect(citySuffix.fake).to.exist;
-		expect(citySuffix).to.respondTo('fake');
-		expect(citySuffix.fake()).to.be.a('string');
+		expect(citySuffix.fakePath).to.exist;
+		expect(citySuffix).to.respondTo('fakePath');
+		expect(citySuffix.fakePath()).to.be.a('string');
 
 		expect(citySuffix.required).to.exist;
 		expect(citySuffix.required).to.be.true;
@@ -67,9 +67,9 @@ describe('tests for address types', function () {
 		expect(streetName.type).to.exist;
 		expect(streetName.type).to.equal('string');
 
-		expect(streetName.fake).to.exist;
-		expect(streetName).to.respondTo('fake');
-		expect(streetName.fake()).to.be.a('string');
+		expect(streetName.fakePath).to.exist;
+		expect(streetName).to.respondTo('fakePath');
+		expect(streetName.fakePath()).to.be.a('string');
 
 		expect(streetName.required).to.exist;
 		expect(streetName.required).to.be.true;
@@ -81,9 +81,9 @@ describe('tests for address types', function () {
 		expect(streetAddress.type).to.exist;
 		expect(streetAddress.type).to.equal('string');
 
-		expect(streetAddress.fake).to.exist;
-		expect(streetAddress).to.respondTo('fake');
-		expect(streetAddress.fake()).to.be.a('string');
+		expect(streetAddress.fakePath).to.exist;
+		expect(streetAddress).to.respondTo('fakePath');
+		expect(streetAddress.fakePath()).to.be.a('string');
 
 		expect(streetAddress.required).to.exist;
 		expect(streetAddress.required).to.be.true;
@@ -95,9 +95,9 @@ describe('tests for address types', function () {
 		expect(streetSuffix.type).to.exist;
 		expect(streetSuffix.type).to.equal('string');
 
-		expect(streetSuffix.fake).to.exist;
-		expect(streetSuffix).to.respondTo('fake');
-		expect(streetSuffix.fake()).to.be.a('string');
+		expect(streetSuffix.fakePath).to.exist;
+		expect(streetSuffix).to.respondTo('fakePath');
+		expect(streetSuffix.fakePath()).to.be.a('string');
 
 		expect(streetSuffix.required).to.exist;
 		expect(streetSuffix.required).to.be.true;
@@ -109,9 +109,9 @@ describe('tests for address types', function () {
 		expect(streetPrefix.type).to.exist;
 		expect(streetPrefix.type).to.equal('string');
 
-		expect(streetPrefix.fake).to.exist;
-		expect(streetPrefix).to.respondTo('fake');
-		expect(streetPrefix.fake()).to.be.a('string');
+		expect(streetPrefix.fakePath).to.exist;
+		expect(streetPrefix).to.respondTo('fakePath');
+		expect(streetPrefix.fakePath()).to.be.a('string');
 
 		expect(streetPrefix.required).to.exist;
 		expect(streetPrefix.required).to.be.true;
@@ -123,9 +123,9 @@ describe('tests for address types', function () {
 		expect(secondaryAddress.type).to.exist;
 		expect(secondaryAddress.type).to.equal('string');
 
-		expect(secondaryAddress.fake).to.exist;
-		expect(secondaryAddress).to.respondTo('fake');
-		expect(secondaryAddress.fake()).to.be.a('string');
+		expect(secondaryAddress.fakePath).to.exist;
+		expect(secondaryAddress).to.respondTo('fakePath');
+		expect(secondaryAddress.fakePath()).to.be.a('string');
 
 		expect(secondaryAddress.required).to.exist;
 		expect(secondaryAddress.required).to.be.true;
@@ -137,9 +137,9 @@ describe('tests for address types', function () {
 		expect(county.type).to.exist;
 		expect(county.type).to.equal('string');
 
-		expect(county.fake).to.exist;
-		expect(county).to.respondTo('fake');
-		expect(county.fake()).to.be.a('string');
+		expect(county.fakePath).to.exist;
+		expect(county).to.respondTo('fakePath');
+		expect(county.fakePath()).to.be.a('string');
 
 		expect(county.required).to.exist;
 		expect(county.required).to.be.true;
@@ -151,9 +151,9 @@ describe('tests for address types', function () {
 		expect(country.type).to.exist;
 		expect(country.type).to.equal('string');
 
-		expect(country.fake).to.exist;
-		expect(country).to.respondTo('fake');
-		expect(country.fake()).to.be.a('string');
+		expect(country.fakePath).to.exist;
+		expect(country).to.respondTo('fakePath');
+		expect(country.fakePath()).to.be.a('string');
 
 		expect(country.required).to.exist;
 		expect(country.required).to.be.true;
@@ -165,9 +165,9 @@ describe('tests for address types', function () {
 		expect(countryCode.type).to.exist;
 		expect(countryCode.type).to.equal('string');
 
-		expect(countryCode.fake).to.exist;
-		expect(countryCode).to.respondTo('fake');
-		expect(countryCode.fake()).to.be.a('string');
+		expect(countryCode.fakePath).to.exist;
+		expect(countryCode).to.respondTo('fakePath');
+		expect(countryCode.fakePath()).to.be.a('string');
 
 		expect(countryCode.required).to.exist;
 		expect(countryCode.required).to.be.true;
@@ -179,9 +179,9 @@ describe('tests for address types', function () {
 		expect(state.type).to.exist;
 		expect(state.type).to.equal('string');
 
-		expect(state.fake).to.exist;
-		expect(state).to.respondTo('fake');
-		expect(state.fake()).to.be.a('string');
+		expect(state.fakePath).to.exist;
+		expect(state).to.respondTo('fakePath');
+		expect(state.fakePath()).to.be.a('string');
 
 		expect(state.required).to.exist;
 		expect(state.required).to.be.true;
@@ -193,9 +193,9 @@ describe('tests for address types', function () {
 		expect(stateAbbr.type).to.exist;
 		expect(stateAbbr.type).to.equal('string');
 
-		expect(stateAbbr.fake).to.exist;
-		expect(stateAbbr).to.respondTo('fake');
-		expect(stateAbbr.fake()).to.be.a('string');
+		expect(stateAbbr.fakePath).to.exist;
+		expect(stateAbbr).to.respondTo('fakePath');
+		expect(stateAbbr.fakePath()).to.be.a('string');
 
 		expect(stateAbbr.required).to.exist;
 		expect(stateAbbr.required).to.be.true;
@@ -207,9 +207,9 @@ describe('tests for address types', function () {
 		expect(latitude.type).to.exist;
 		expect(latitude.type).to.equal('string');
 
-		expect(latitude.fake).to.exist;
-		expect(latitude).to.respondTo('fake');
-		expect(latitude.fake()).to.be.a('string');
+		expect(latitude.fakePath).to.exist;
+		expect(latitude).to.respondTo('fakePath');
+		expect(latitude.fakePath()).to.be.a('string');
 
 		expect(latitude.required).to.exist;
 		expect(latitude.required).to.be.true;
@@ -221,9 +221,9 @@ describe('tests for address types', function () {
 		expect(latitude.type).to.exist;
 		expect(latitude.type).to.equal('string');
 
-		expect(latitude.fake).to.exist;
-		expect(latitude).to.respondTo('fake');
-		expect(latitude.fake()).to.be.a('string');
+		expect(latitude.fakePath).to.exist;
+		expect(latitude).to.respondTo('fakePath');
+		expect(latitude.fakePath()).to.be.a('string');
 
 		expect(latitude.required).to.exist;
 		expect(latitude.required).to.be.true;
@@ -235,9 +235,9 @@ describe('tests for address types', function () {
 		expect(longitude.type).to.exist;
 		expect(longitude.type).to.equal('string');
 
-		expect(longitude.fake).to.exist;
-		expect(longitude).to.respondTo('fake');
-		expect(longitude.fake()).to.be.a('string');
+		expect(longitude.fakePath).to.exist;
+		expect(longitude).to.respondTo('fakePath');
+		expect(longitude.fakePath()).to.be.a('string');
 
 		expect(longitude.required).to.exist;
 		expect(longitude.required).to.be.true;

@@ -3,15 +3,15 @@ var _ = require('lodash');
 /**
  * helper function to generate type object
  * @param {string} type
- * @param {Function} fake
+ * @param {Function} fakePath
  * @param {Function} validation
  * @param {Object} attr
  * @returns {Object} generated type
  */
-module.exports.generateType = function (type, fake, validation, attr) {
+module.exports.generateType = function (type, fakePath, validation, attr) {
 	return _.assign({
 		type: type,
-		fake: fake,
+		fakePath: fakePath,
 		validation: validation
 	}, attr);
 };
@@ -31,5 +31,5 @@ module.exports.changeType = function (func, type) {
 		} else {
 			return new Error('not a valid mongoose type');
 		}
-	}
+	};
 };

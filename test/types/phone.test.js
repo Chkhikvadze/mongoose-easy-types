@@ -11,9 +11,9 @@ describe('tests for phone types', function () {
 		expect(phoneNumber.type).to.exist;
 		expect(phoneNumber.type).to.equal('string');
 
-		expect(phoneNumber.fake).to.exist;
-		expect(phoneNumber).to.respondTo('fake');
-		expect(phoneNumber.fake()).to.be.a('string');
+		expect(phoneNumber.fakePath).to.exist;
+		expect(phoneNumber).to.respondTo('fakePath');
+		expect(phoneNumber.fakePath()).to.be.a('string');
 
 		expect(phoneNumber.required).to.exist;
 		expect(phoneNumber.required).to.be.true;
@@ -25,9 +25,9 @@ describe('tests for phone types', function () {
 		expect(phoneNumberFormat.type).to.exist;
 		expect(phoneNumberFormat.type).to.equal('string');
 
-		expect(phoneNumberFormat.fake).to.exist;
-		expect(phoneNumberFormat).to.respondTo('fake');
-		expect(phoneNumberFormat.fake()).to.be.a('string');
+		expect(phoneNumberFormat.fakePath).to.exist;
+		expect(phoneNumberFormat).to.respondTo('fakePath');
+		expect(phoneNumberFormat.fakePath()).to.be.a('string');
 
 		expect(phoneNumberFormat.required).to.exist;
 		expect(phoneNumberFormat.required).to.be.true;
@@ -39,9 +39,9 @@ describe('tests for phone types', function () {
 		expect(phoneFormats.type).to.exist;
 		expect(phoneFormats.type).to.equal('string');
 
-		expect(phoneFormats.fake).to.exist;
-		expect(phoneFormats).to.respondTo('fake');
-		expect(phoneFormats.fake()).to.be.a('string');
+		expect(phoneFormats.fakePath).to.exist;
+		expect(phoneFormats).to.respondTo('fakePath');
+		expect(phoneFormats.fakePath()).to.be.a('string');
 
 		expect(phoneFormats.required).to.exist;
 		expect(phoneFormats.required).to.be.true;
