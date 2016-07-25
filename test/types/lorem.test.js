@@ -33,6 +33,20 @@ describe('tests for lorem types', function () {
 		expect(words.required).to.be.true;
 	});
 
+	it('should generate words type as array', function () {
+		var words = types.words({required: true, asArray: true});
+
+		expect(words.type).to.exist;
+		expect(words.type).to.be.instanceof(Array);
+
+		expect(words.fakePath).to.exist;
+		expect(words).to.respondTo('fakePath');
+		expect(words.fakePath()).to.be.instanceof(Array);
+
+		expect(words.required).to.exist;
+		expect(words.required).to.be.true;
+	});
+
 	it('should generate sentence type', function () {
 		var sentence = types.sentence({required: true});
 
@@ -48,7 +62,7 @@ describe('tests for lorem types', function () {
 	});
 
 	it('should generate sentences type', function () {
-		var sentences = types.sentences({required: true});
+		var sentences = types.sentences({required: true, asArray : false});
 
 		expect(sentences.type).to.exist;
 		expect(sentences.type).to.equal('string');
@@ -59,6 +73,19 @@ describe('tests for lorem types', function () {
 
 		expect(sentences.required).to.exist;
 		expect(sentences.required).to.be.true;
+	});
+
+	it('should generate sentences type as array', function () {
+		var sentences = types.sentences({required: true, asArray: true});
+
+		expect(sentences.type).to.exist;
+		expect(sentences.type).to.be.instanceof(Array);
+
+		expect(sentences.fakePath).to.exist;
+		expect(sentences).to.respondTo('fakePath');
+		expect(sentences.fakePath()).to.be.instanceof(Array);
+
+		expect(sentences.required).to.exist;
 	});
 
 	it('should generate paragraph type', function () {
@@ -112,6 +139,20 @@ describe('tests for lorem types', function () {
 		expect(lines.fakePath).to.exist;
 		expect(lines).to.respondTo('fakePath');
 		expect(lines.fakePath()).to.be.a('string');
+
+		expect(lines.required).to.exist;
+		expect(lines.required).to.be.true;
+	});
+
+	it('should generate lines type as array', function () {
+		var lines = types.lines({required: true, asArray: true});
+
+		expect(lines.type).to.exist;
+		expect(lines.type).to.be.instanceof(Array);
+
+		expect(lines.fakePath).to.exist;
+		expect(lines).to.respondTo('fakePath');
+		expect(lines.fakePath()).to.be.instanceof(Array);
 
 		expect(lines.required).to.exist;
 		expect(lines.required).to.be.true;

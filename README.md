@@ -21,8 +21,8 @@ advanced modeling with mongoose
   * countryCode
   * state
   * stateAbbr
-  * latitude
-  * longitude
+  * latitude - { type : Number }
+  * longitude - { type : Number }
 * commerce
   * color
   * department
@@ -48,8 +48,8 @@ advanced modeling with mongoose
   * future - { type : date }
   * between - { type : date }
   * recent - { type : date }
-  * month
-  * weekday
+  * month - { type : Number }
+  * weekday - { type : Number }
 * fake
 * finance
   * account
@@ -113,13 +113,13 @@ advanced modeling with mongoose
   * password
 * lorem - { type : String }
   * word
-  * words
+  * words - if (asArray : true) { type : [] } else  { type : 'string' }
   * sentence
   * sentences
   * paragraph
-  * paragraphs
+  * paragraphs - if (asArray : true) { type : [] } else  { type : 'string' }
   * text
-  * lines
+  * lines - if (asArray : true) { type : [] } else  { type : 'string' }
 * name - { type : String }
   * firstName
   * lastName
@@ -141,7 +141,7 @@ advanced modeling with mongoose
   * objectElement
   * boolean - { type : boolean }
   * word
-  * words
+  * words - if (asArray : true) { type : [] } else  { type : 'string' }
   * image
   * locale
   * alphaNumeric

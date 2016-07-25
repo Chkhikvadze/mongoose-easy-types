@@ -136,7 +136,7 @@ module.exports.stateAbbr = function (attr) {
  * @returns {Object} latitude type
  */
 module.exports.latitude = function (attr) {
-	return utils.generateType('string', faker.address.latitude, null, attr);
+	return utils.generateType('number', utils.changeType(faker.address.latitude, 'number'), null, attr);
 };
 
 /**
@@ -145,5 +145,5 @@ module.exports.latitude = function (attr) {
  * @returns {Object} longitude type
  */
 module.exports.longitude = function (attr) {
-	return utils.generateType('string', faker.address.longitude, null, attr);
+	return utils.generateType('number', utils.changeType(faker.address.longitude, 'number'), null, attr);
 };

@@ -205,39 +205,25 @@ describe('tests for address types', function () {
 		var latitude = types.latitude({required: true});
 
 		expect(latitude.type).to.exist;
-		expect(latitude.type).to.equal('string');
+		expect(latitude.type).to.equal('number');
 
 		expect(latitude.fakePath).to.exist;
 		expect(latitude).to.respondTo('fakePath');
-		expect(latitude.fakePath()).to.be.a('string');
-
-		expect(latitude.required).to.exist;
-		expect(latitude.required).to.be.true;
-	});
-
-	it('should generate latitude type', function () {
-		var latitude = types.county({required: true});
-
-		expect(latitude.type).to.exist;
-		expect(latitude.type).to.equal('string');
-
-		expect(latitude.fakePath).to.exist;
-		expect(latitude).to.respondTo('fakePath');
-		expect(latitude.fakePath()).to.be.a('string');
+		expect(latitude.fakePath()).to.be.a('number');
 
 		expect(latitude.required).to.exist;
 		expect(latitude.required).to.be.true;
 	});
 
 	it('should longitude county type', function () {
-		var longitude = types.county({required: true});
+		var longitude = types.longitude({required: true});
 
 		expect(longitude.type).to.exist;
-		expect(longitude.type).to.equal('string');
+		expect(longitude.type).to.equal('number');
 
 		expect(longitude.fakePath).to.exist;
 		expect(longitude).to.respondTo('fakePath');
-		expect(longitude.fakePath()).to.be.a('string');
+		expect(longitude.fakePath()).to.be.a('number');
 
 		expect(longitude.required).to.exist;
 		expect(longitude.required).to.be.true;

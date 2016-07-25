@@ -16,7 +16,11 @@ module.exports.word = function (attr) {
  * @returns {Object} words type
  */
 module.exports.words = function (attr) {
-	return utils.generateType('string', faker.lorem.words, null, attr);
+	if (attr.asArray){
+		return utils.generateType([], utils.changeTypeAsArray(faker.lorem.words, ' '), null, attr);
+	}else{
+		return utils.generateType('string', faker.lorem.words, null, attr);
+	}
 };
 
 /**
@@ -34,7 +38,11 @@ module.exports.sentence = function (attr) {
  * @returns {Object} sentences type
  */
 module.exports.sentences = function (attr) {
-	return utils.generateType('string', faker.lorem.sentences, null, attr);
+	if (attr.asArray){
+		return utils.generateType([], utils.changeTypeAsArray(faker.lorem.sentences, '. '), null, attr);
+	}else{
+		return utils.generateType('string', faker.lorem.sentences, null, attr);
+	}
 };
 
 /**
@@ -71,5 +79,9 @@ module.exports.text = function (attr) {
  */
 
 module.exports.lines = function (attr) {
-	return utils.generateType('string', faker.lorem.lines, null, attr);
+	if (attr.asArray){
+		return utils.generateType([], utils.changeTypeAsArray(faker.lorem.lines, /\r?\n/), null, attr);
+	}else{
+		return utils.generateType('string', faker.lorem.lines, null, attr);
+	}
 };

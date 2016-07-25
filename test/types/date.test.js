@@ -65,11 +65,11 @@ describe('tests for date types', function () {
 		var month = types.month({required: true});
 
 		expect(month.type).to.exist;
-		expect(month.type).to.equal('string');
+		expect(month.type).to.equal('number');
 
 		expect(month.fakePath).to.exist;
 		expect(month).to.respondTo('fakePath');
-		expect(month.fakePath()).to.be.a('string');
+		expect(month.fakePath()).to.be.a('number');
 
 		expect(month.required).to.exist;
 		expect(month.required).to.be.true;
@@ -79,11 +79,11 @@ describe('tests for date types', function () {
 		var weekday = types.weekday({required: true});
 
 		expect(weekday.type).to.exist;
-		expect(weekday.type).to.equal('string');
+		expect(weekday.type).to.equal('number');
 
 		expect(weekday.fakePath).to.exist;
 		expect(weekday).to.respondTo('fakePath');
-		expect(weekday.fakePath()).to.be.a('string');
+		expect(weekday.fakePath()).to.be.a('number');
 
 		expect(weekday.required).to.exist;
 		expect(weekday.required).to.be.true;

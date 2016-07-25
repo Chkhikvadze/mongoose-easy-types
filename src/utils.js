@@ -28,8 +28,23 @@ module.exports.changeType = function (func, type) {
 
 		if (type === 'number') {
 			return Number(func());
-		} else {
+		}
+		else if (type === 'array'){
+			return func().split(' ');
+		}else {
 			return new Error('not a valid mongoose type');
 		}
+	};
+};
+
+/**
+ * changes types with compatability to mongoose
+ * @param func
+ * @param {string} type mongoose type names only
+ * @returns {Function} converter function
+ */
+module.exports.changeTypeAsArray = function (func, split) {
+	return function() {
+		return func().split(split);
 	};
 };

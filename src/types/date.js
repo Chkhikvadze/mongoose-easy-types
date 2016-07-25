@@ -43,7 +43,7 @@ module.exports.recent = function (attr) {
  * @returns {Object} month type
  */
 module.exports.month = function (attr) {
-	return utils.generateType('string', faker.date.month, null, attr);
+	return utils.generateType('number', utils.changeType(faker.date.month, 'number'), null, attr);
 };
 
 /**
@@ -52,5 +52,5 @@ module.exports.month = function (attr) {
  * @returns {Object} weekday type
  */
 module.exports.weekday = function (attr) {
-	return utils.generateType('string', faker.date.weekday, null, attr);
+	return utils.generateType('number', utils.changeType(faker.date.weekday, 'number'), null, attr);
 };

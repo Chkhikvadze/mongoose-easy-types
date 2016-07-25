@@ -62,7 +62,11 @@ module.exports.word = function (attr) {
  */
 
 module.exports.words = function (attr) {
-	return utils.generateType('string', faker.random.words, null, attr);
+	if (attr.asArray){
+		return utils.generateType([], utils.changeTypeAsArray(faker.random.words, ' '), null, attr);
+	}else{
+		return utils.generateType('string', faker.random.words, null, attr);
+	}
 };
 
 /**

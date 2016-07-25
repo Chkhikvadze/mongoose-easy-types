@@ -104,6 +104,20 @@ describe('tests for random types', function () {
 		expect(words.required).to.be.true;
 	});
 
+	it('should generate words type as array', function () {
+		var words = types.words({required: true, asArray : true});
+
+		expect(words.type).to.exist;
+		expect(words.type).to.be.instanceof(Array);
+
+		expect(words.fakePath).to.exist;
+		expect(words).to.respondTo('fakePath');
+		expect(words.fakePath()).to.be.instanceof(Array);
+
+		expect(words.required).to.exist;
+		expect(words.required).to.be.true;
+	});
+
 	it('should generate locale type', function () {
 		var locale = types.locale({required: true});
 

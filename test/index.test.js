@@ -35,6 +35,9 @@ describe('tests for module types', function () {
 			avatar : types.image.avatar(),
 			imageUrl : types.image.imageUrl(),
 			animals : types.image.animals(),
+			latitude : types.address.latitude(),
+			longitude : types.address.longitude()
+
 		});
 		var model = mongoose.model("Model", schema);
 
@@ -82,6 +85,8 @@ describe('tests for module types', function () {
 		item.avatar = types.image.avatar().fakePath();
 		item.imageUrl = types.image.imageUrl().fakePath();
 		item.animals = types.image.animals().fakePath();
+		item.latitude = types.address.latitude().fakePath();
+		item.longitude = types.address.longitude().fakePath();
 
 		return new Promise(function (resolve, reject) {
 
@@ -104,6 +109,8 @@ describe('tests for module types', function () {
 				assert.property(item, 'avatar');
 				assert.property(item, 'imageUrl');
 				assert.property(item, 'animals');
+				assert.property(item, 'latitude');
+				assert.property(item, 'longitude');
 
 				resolve(item);
 			}).catch(reject);
