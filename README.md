@@ -1,7 +1,74 @@
 # mongoose-fake
-advanced modeling with mongoose
+Advanced modeling with mongoose.
+
+Fill mongoose schema with easy types and seed mongoose model by fake data.
 
 [![Build Status](https://travis-ci.org/Chkhikvadze/mongoose-fake.svg?branch=master)](https://github.com/Chkhikvadze/mongoose-fake)
+
+
+
+##Usege 1
+	var mongoose = require('mongoose');
+    var types = require('mongoose-easy-types').Types;
+
+    var plugin = require('mongoose-easy-types').Plugin;
+    mongoose.plugin(plugin)
+
+    var schema = mongoose.Schema({
+    			firstName : types.name.firstName({}),
+    			lastName : types.name.firstName({require : true})
+    			date : types.date.future(),
+    			price : types.commerce.price(),
+    			email : types.internet.email({  match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+                                                'Please fill a valid email address']    }),
+    			isTrue : types.random.boolean(),
+    			imageUrl : types.image.imageUrl({default: false}),
+    			peoples : [{
+	                name : types.name.findName({}),
+	                date : types.date.future()
+    			}]
+    		});
+
+	model = mongoose.model('model', schema);
+
+	var count = 10;
+	nestedField = 'peoples';
+	nestedCount  = 15;
+	model.seed(20, { peoples : 10}) //filled database with 20 items, peoples property filled with 10 items.
+
+##Usege 2
+	var mongoose = require('mongoose');
+    var plugin = require('mongoose-easy-types').Plugin;
+    var types = require('mongoose-easy-types').Types;
+
+    mongoose.plugin(plugin)
+
+    var schema = mongoose.Schema({
+    			firstName : {
+    				type : types.name.firstName().type,
+    				fakePath : types.name.firstName().fakePath
+    			},
+    			number : {
+    				type : types.random.number().type,
+    				fakePath : types.random.number().fakePath
+    			},
+    			isTrue : {
+    				type : types.random.boolean().type,
+    				fakePath : types.random.boolean().fakePath,
+                    default : false
+    			}
+    		});
+
+	model = mongoose.model('model', schema);
+	var items = model.fake(10); //return list of filled models
+	var fakes = model.fake(count, 'firstName') // return list of filled model (only filled firstName)
+
+
+
+### Plugin Functions
+* model.seed(count, { nestedFieldCount : nestedCount});
+* model.fake(count);
+* model.fake(count, 'property1, property2, property3')
 
 
 ### Types
