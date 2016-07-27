@@ -5,9 +5,13 @@ Fill mongoose schema with easy types and seed mongoose model by fake data.
 
 [![Build Status](https://travis-ci.org/Chkhikvadze/mongoose-fake.svg?branch=master)](https://github.com/Chkhikvadze/mongoose-fake)
 
+## Install
 
+```bash
+$ npm install mongoose-easy-fill
+```
 
-##Usege 1
+##Usage 1
 	var mongoose = require('mongoose');
     var types = require('mongoose-easy-types').Types;
 
@@ -36,7 +40,7 @@ Fill mongoose schema with easy types and seed mongoose model by fake data.
 	nestedCount  = 15;
 	model.seed(20, { peoples : 10}) //filled database with 20 items, peoples property filled with 10 items.
 
-##Usege 2
+##Usage 2
 	var mongoose = require('mongoose');
     var plugin = require('mongoose-easy-types').Plugin;
     var types = require('mongoose-easy-types').Types;
