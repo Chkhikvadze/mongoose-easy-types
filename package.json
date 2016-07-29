@@ -1,34 +1,40 @@
 {
-  "name": "mongoose-fake",
-  "version": "0.0.1",
-  "description": "mongoose fake",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha --timeout 35000",
-    "lint": "eslint . --quiet"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Chkhikvadze/mongoose-fake.git"
-  },
-  "keywords": [
-    "mongoose",
-    "fake"
-  ],
-  "author": "Giga Chkhikvadze",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Chkhikvadze/mongoose-fake/issues"
-  },
-  "homepage": "https://github.com/Chkhikvadze/mongoose-fake#readme",
-  "dependencies": {
-    "faker": "3.1.0",
-    "lodash": "4.13.1",
-    "mongoose": "4.5.5"
-  },
-  "devDependencies": {
-    "chai": "3.5.0",
-    "eslint": "3.1.0",
-    "mocha": "2.5.3"
-  }
+	"name": "mongoose-easy-types",
+	"version": "0.0.1",
+	"description": "mongoose plugin with additional types with fake generation",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha --timeout 35000",
+		"lint": "eslint . --quiet"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Chkhikvadze/mongoose-easy-types.git"
+	},
+	"keywords": [
+		"mongoose",
+		"fake",
+		"types",
+		"mongodb",
+		"mock"
+	],
+	"author": "Giga Chkhikvadze <giga@chkhikvadze.com> (https://github.com/chkhikvadze)",
+	"contributors": [
+		"Nika Nikabadze <nika.interisti@gmail.com> (https://github.com/interisti)"
+	],
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Chkhikvadze/mongoose-easy-types/issues"
+	},
+	"homepage": "https://github.com/Chkhikvadze/mongoose-easy-types#readme",
+	"dependencies": {
+		"faker": "3.1.0",
+		"lodash": "4.13.1",
+		"mongoose": "4.5.5"
+	},
+	"devDependencies": {
+		"chai": "3.5.0",
+		"eslint": "3.1.0",
+		"mocha": "2.5.3"
+	}
 }
