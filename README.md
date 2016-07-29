@@ -3,7 +3,7 @@ Advanced modeling with mongoose.
 
 Fill mongoose schema with easy types and seed mongoose model by fake data.
 
-[![Build Status](https://travis-ci.org/Chkhikvadze/mongoose-fake.svg?branch=master)](https://github.com/Chkhikvadze/mongoose-fake)
+[![Build Status](https://travis-ci.org/Chkhikvadze/mongoose-easy-types.svg?branch=master)](https://github.com/Chkhikvadze/mongoose-easy-types)
 
 ## Install
 
