@@ -2,9 +2,7 @@ var mongoose = require('mongoose');
 
 // Global before hook
 before(function (done) {
-
-	mongoose.connect('mongodb://localhost:27017/testMongooseTypes');
-	done();
+	mongoose.connect('mongodb://localhost:27017/testMongooseTypes', done);
 });
 
 // Global after hook
@@ -13,6 +11,5 @@ after(function (done) {
   // remove database
   mongoose.connection.db.dropDatabase();
 
-  console.log(); // Skip a line before displaying Sails lowering logs
   done();
 });

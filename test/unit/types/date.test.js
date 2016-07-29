@@ -1,4 +1,4 @@
-var types = require('../../src/types/date');
+var types = require('../../../src/types/date');
 var expect = require('chai').expect;
 
 

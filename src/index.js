@@ -19,3 +19,5 @@ fs.readdirSync(typesDir)
 	});
 // export
 module.exports.Types = types;
+
+module.exports.Plugin = require('./fakePlugin');

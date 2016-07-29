@@ -1,4 +1,4 @@
-var types = require('../../src/types/address');
+var types = require('../../../src/types/address');
 var expect = require('chai').expect;
 
 

@@ -1,4 +1,4 @@
-var types = require('../../src/types/system');
+var types = require('../../../src/types/system');
 var expect = require('chai').expect;
 
 
@@ -105,28 +105,28 @@ describe('tests for system types', function () {
 
 	// it('should generate directoryPath type', function () {
 	// 	var directoryPath = types.directoryPath({required: true});
-    //
+	//
 	// 	expect(directoryPath.type).to.exist;
 	// 	expect(directoryPath.type).to.equal('string');
-    //
+	//
 	// 	expect(directoryPath.fakePath).to.exist;
 	// 	expect(directoryPath).to.respondTo('fakePath');
 	// 	expect(directoryPath.fakePath()).to.be.a('string');
-    //
+	//
 	// 	expect(directoryPath.required).to.exist;
 	// 	expect(directoryPath.required).to.be.true;
 	// });
-    //
+	//
 	// it('should generate filePath type', function () {
 	// 	var filePath = types.filePath({required: true});
-    //
+	//
 	// 	expect(filePath.type).to.exist;
 	// 	expect(filePath.type).to.equal('string');
-    //
+	//
 	// 	expect(filePath.fakePath).to.exist;
 	// 	expect(filePath).to.respondTo('fakePath');
 	// 	expect(filePath.fakePath()).to.be.a('string');
-    //
+	//
 	// 	expect(filePath.required).to.exist;
 	// 	expect(filePath.required).to.be.true;
 	// });
