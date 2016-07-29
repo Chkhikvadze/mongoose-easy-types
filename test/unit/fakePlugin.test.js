@@ -104,6 +104,4 @@ describe('tests for fake plugin', function () {
 
 		done();
 	});
-
-
 });

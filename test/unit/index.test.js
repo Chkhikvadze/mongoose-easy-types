@@ -110,5 +110,4 @@ describe('tests for module types', function () {
 			done();
 		});
 	});
-
 });

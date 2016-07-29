@@ -40,7 +40,7 @@ module.exports.changeType = function (func, type) {
 /**
  * changes types with compatability to mongoose
  * @param func
- * @param {string} type mongoose type names only
+ * @param {string} split mongoose type names only
  * @returns {Function} converter function
  */
 module.exports.changeTypeAsArray = function (func, split) {
