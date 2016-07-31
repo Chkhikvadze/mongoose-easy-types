@@ -11,6 +11,31 @@ Fill mongoose schema with easy types and seed mongoose model by fake data.
 $ npm install mongoose-easy-types
 ```
 
+
+## Instead of this:
+```
+//Instead of this                                                //write this
+var schema = mongoose.Schema({                                   var schema = mongoose.Schema({
+    firstName : {                                                      irstName : Types.name.firstName({}),
+        type : mongoose.Schema.Types.String                            date : Types.date.future(),
+    },                                                                 price : Types.commerce.price(),
+    dateOfBirth : {                                                    email : Types.internet.email({required: true}),
+        type : mongoose.Schema.Types.Date                              gender : Types.random.boolean({default: true })
+    },                                                           });
+    price : {
+        type : mongoose.Schema.Types.Number
+    },
+    email : {
+        type : mongoose.Schema.Types.String,
+        required: true
+    },
+    gender : {
+        type : mongoose.Schema.Types.Boolean,
+        default: false
+    }
+});
+```
+
 ##Usage 1 (Statics)
 	var mongoose = require('mongoose');
     var Types = require('mongoose-easy-types').Types;
@@ -25,8 +50,8 @@ $ npm install mongoose-easy-types
         date : Types.date.future(),
         price : Types.commerce.price(),
         email : Types.internet.email({required: true}),
-        gender : Types.random.boolean(),
-        image : Types.image.imageUrl({default: false}),
+        gender : Types.random.boolean({default: false}),
+        image : Types.image.imageUrl(),
         peoples : [{
             name : Types.name.findName({}),
             date : Types.date.future()
