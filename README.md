@@ -14,14 +14,14 @@ $ npm install mongoose-easy-types
 
 ## Instead of this:
 ```
-//Instead of this                                                //write this
-var schema = mongoose.Schema({                                   var schema = mongoose.Schema({
-    firstName : {                                                      irstName : Types.name.firstName({}),
-        type : mongoose.Schema.Types.String                            date : Types.date.future(),
-    },                                                                 price : Types.commerce.price(),
-    dateOfBirth : {                                                    email : Types.internet.email({required: true}),
+//Instead of this                                      //write this
+var schema = mongoose.Schema({                         var schema = mongoose.Schema({
+    firstName : {                                             firstName : Types.name.firstName({}),
+        type : mongoose.Schema.Types.String                   date : Types.date.future(),
+    },                                                        price : Types.commerce.price(),
+    dateOfBirth : {                                           email : Types.internet.email({required: true}),
         type : mongoose.Schema.Types.Date                              gender : Types.random.boolean({default: true })
-    },                                                           });
+    },                                                 });
     price : {
         type : mongoose.Schema.Types.Number
     },
