@@ -3,7 +3,7 @@ var path = require('path');
 
 var types = {};
 // loop through files in types directory
-var typesDir = path.join(__dirname, './types');
+var typesDir = path.join(__dirname, './src/types');
 fs.readdirSync(typesDir)
 	.forEach(function (file) {
 		var prop = file.split('.')[0];
@@ -20,4 +20,4 @@ fs.readdirSync(typesDir)
 // export
 module.exports.Types = types;
 
-module.exports.Plugin = require('./fakePlugin');
+module.exports.Plugin = require('./src/fakePlugin');

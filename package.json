@@ -1,6 +1,6 @@
 {
 	"name": "mongoose-easy-types",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "mongoose plugin with additional types with fake generation",
 	"main": "index.js",
 	"scripts": {

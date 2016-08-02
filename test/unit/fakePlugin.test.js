@@ -1,5 +1,5 @@
-var types = require('../../src').Types;
-var fakePlugin = require('../../src').Plugin;
+var types = require('../../').Types;
+var fakePlugin = require('../../').Plugin;
 var expect = require('chai').expect;
 var assert = require('chai').assert;
 var mongoose = require('mongoose');

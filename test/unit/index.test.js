@@ -1,4 +1,4 @@
-var types = require('../../src').Types;
+var types = require('../../').Types;
 var expect = require('chai').expect;
 var mongoose = require('mongoose');
 var assert = require('chai').assert;
